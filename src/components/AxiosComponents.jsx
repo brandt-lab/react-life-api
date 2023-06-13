@@ -8,8 +8,8 @@ const [movies , setMovies] = useState([]);
 
     useEffect(() => {
         axios.get("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=all&api-key=adcJkDLGetSLrV4eFDh1Z8727kmwNz1O")
-
-            .then((result) => {
+ 
+            .then((result) => { 
               setMovies(result.data.results);
                 (console.log(result.data)
                 )
